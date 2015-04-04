@@ -1,0 +1,29 @@
+# Unix
+alias tlf="tail -f"
+alias ...='../..'
+alias l='ls'
+alias ll='ls -al'
+alias lh='ls -Alh'
+alias e='$EDITOR'
+
+# Bundler
+alias be="bundle exec"
+alias bi="bundle install"
+
+# Rails
+alias migrate="rake db:migrate db:rollback && rake db:migrate"
+alias m="migrate"
+alias rk="rake"
+alias s="rspec"
+
+# Pretty print the path
+alias path='echo $PATH | tr -s ":" "\n"'
+
+# Git
+alias gs="git status"
+alias gd="git diff"
+
+alias flush="dscacheutil -flushcache"
+
+# Include custom aliases
+[[ -f ~/.aliases.local ]] && source ~/.aliases.local
